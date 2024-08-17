@@ -6,7 +6,7 @@
 - Description
 
 The Shipping Label Generator is a WordPress plugin designed to work with WooCommerce. It allows you to easily generate and print shipping labels for your WooCommerce orders. The labels include essential information such as the customer's name, address, order number, and more. This plugin simplifies the process of creating shipping labels directly from your WooCommerce orders page.
-Features
+
 
 > Shipping Label Generator කියන්නෙ සාමාන්‍ය WooCommerce store එකක් පවත්වාගෙන යන කෙනෙක්ට උදව්වක් වෙන්න හදපු WordPress plugin එකක්. මේකෙන් පුලුවන් ඔයාට WooCommerce store එක හරහා එන orders වලට අදාල Manualy shipping label එක ලියන්නෙ නැතුව automatically generate කරලා ගන්න. සම්පූර්ණයෙන් විස්තරයක් Blog එකේ දාලා තියනවා. එතනින් කියවලා බලලා කරගන්න.  **[Dilshaner.com/Blog](https://www.dilshaner.com "Dilshaner.com")**
 
