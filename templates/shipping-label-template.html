@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shipping Label</title>
+    <style>
+        .container {
+            width: 4in;
+            height: 6in;
+            border: 2px solid black;
+            padding: 5px;
+            font-family: Arial, sans-serif;
+            box-sizing: border-box;
+            background-color: #ffffff;
+        }
+        
+        .header {
+            text-align: center;
+            font-size: 10px;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: black;
+        }
+
+        .section {
+            border: 1px solid black;
+            padding: 5px;
+            margin-bottom: 5px;
+        }
+
+        .section h3 {
+            margin: 0 0 5px 0;
+            font-size: 10px;
+            font-weight: bold;
+            color: black;
+        }
+
+        .label {
+            display: flex;
+            align-items: center;
+            margin-bottom: 3px;
+            font-weight: bold;
+            color: black;
+        }
+
+        .label::before {
+            content: '* ';
+            font-weight: bold;
+            color: black;
+            margin-right: 5px;
+        }
+
+        .tracking {
+            font-size: 14px;
+            font-weight: bold;
+            text-align: ;
+            margin-top: 5px;
+            padding: 0.3in;
+            color: black;
+        }
+
+        .footer {
+            text-align: center;
+            font-size: 12px;
+            color: black;
+            margin-top: 5px;
+        }
+
+        .proof-of-delivery,
+        .cod-section {
+            border: 1px solid black;
+            padding: 5px;
+            margin-top: 5px;
+        }
+
+        .proof-of-delivery h3,
+        .cod-section h3 {
+            margin: 0 0 5px 0;
+            font-size: 15px;
+            font-weight: bold;
+            color: black;
+        }
+
+        .weight-order-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 5px;
+        }
+
+        .weight-order-table td {
+            padding: 10px;
+            font-size: 14px;
+            font-weight: bold;
+            color: black;
+        }
+
+        .weight-order-table td.left {
+            text-align: left;
+        }
+
+        .weight-order-table td.right {
+            text-align: right;
+        }
+
+        .text-large {
+            font-size: 16px;
+        }
+
+        .text-medium {
+            font-size: 10px;
+        }
+
+        .text-small {
+            font-size: 12px;
+        }
+
+        .delivery-address, .user-name-phone {
+            font-size: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="section">
+            <div class="label text-small"><span>  Name:</span> Your Store's Name</div>
+            <div class="label text-small"><span> • Phone:</span> Your Store Number</div>
+        </div>
+
+        <div class="section">
+            <div class="label delivery-address text-large"><span> • Name:</span> Sample_name</div>
+            <div class="label delivery-address text-large"><span> • Address:</span> Sample_address</div>
+            <div class="label delivery-address text-large"><span> • City:</span> Sample_city</div>
+            <div class="label delivery-address text-large"><span> • District:</span> Sample_district </div>
+            <div class="label delivery-address text-large"><span> • Phone 1:</span> Sample_phone</div>
+            <div class="label delivery-address text-large"><span> • Phone 2:</span> phone2 </div>
+        </div>
+
+        <div class="tracking text-medium"> • Order Number : .  .  .  . </div>
+        <table class="weight-order-table">
+            <tr>
+                <td class="left text-medium"><span> • Weight:</span> .  .  .  . kg</td>
+                <td class="right text-medium"><span> Waybill</span> .  .  .  .  . </td>
+            </tr>
+        </table>
+
+        <div class="cod-section">
+            <h3 class="text-medium"> * COD Amount: <span></span> Sample_price /= </h3>
+        </div>
+
+        <div class="proof-of-delivery">
+            <h3 class="text-medium">Proof of Delivery</h3>
+            <div class="label text-small"><span> • Name:</span> .  .  .  . .  .  .  . .  .  .  . .  .  .  . .  .  .  . .  .  .  . </div>
+            <div class="label text-small"><span> • NIC:</span> .  .  .  . .  .  .  . .  .  .  . .  .  .  . .  .  .  . .  .  .  . </div>
+            <div class="label text-small"><span> • Signature:</span>.  .  .  . .  .  .  . .  .  .  . .  .  .  . .  .  .  . .  .  .  . </div>
+            <div class="label text-small"><span> • Date:</span> .  .  .  . .  .  .  . .  .  .  . .  .  .  . .  .  .  . .  .  .  . </div>
+        </div>
+    </div>
+</body>
+</html>
